@@ -176,6 +176,7 @@ $clBorder:#D9FFF5;
     position: relative;
     left: 50%;
     right: 50%;
+    max-width: 1335px;
     margin-left: -50vw;
     width: 100vw;
   }
@@ -204,6 +205,9 @@ $clBorder:#D9FFF5;
     display: none;
   }
 }
+ul.list-equipment-two {
+  display: none;
+}
 @media (min-width: 768px) {
   body {
     margin: 0;
@@ -231,6 +235,12 @@ $clBorder:#D9FFF5;
     align-self: center;
     margin-left: 15px;
     background-color: $clEa;
+  }
+  ul.list-equipment-two {
+    display: flex;
+  }
+  button.read-more-two {
+    display: flex !important;
   }
   div.header__divider.divider {
     width: 2px;
@@ -488,7 +498,7 @@ button {
   padding-left: 15px;
 }
 .services__title-two{
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .swiper {
   margin-top: 15px;
@@ -516,12 +526,16 @@ button {
 .list-equipment-two {
   margin-top: 30px;
   display: flex;
+  height: 25%;
   flex-wrap: wrap;
   padding-left: 25px;
   gap: 25px;
   row-gap: 20px;
 }
-button.list-equipment__item,
+.rotate{
+  transform: rotate(180deg);
+}
+.list-equipment__item,
 .list-equipment__item-two {
   height: 72px;
   width: 222px;
@@ -532,14 +546,26 @@ button.list-equipment__item,
   justify-content: space-between;
   align-items: center;
 }
-button.hidden {
-  display: none;
+.list-equipment__item-two{
+  width: 230px;
+  height: 160px;
+  padding: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.hidden,
+.hidden-two{
+  opacity: 0;
+  padding: 0;
+  height: 0px !important;
+  transition: 1s;
+  border: none !important;
 }
 button.read-more,
 button.read-more-two{
   all: unset;
   margin-left: 25px;
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   font-family: TTLakesM;
@@ -603,6 +629,38 @@ button.read-more-two{
     margin-top: auto;
   }
 //--
+
+//swiper 3
+.three {
+  height: 200px !important;
+}
+.swiper-three {
+  margin-top: 15px;
+  width: 100%;
+  height: 330px !important;
+  }
+//--
+@media (min-width: 1366px) {
+  body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px !important;
+  }
+  .company-img{
+    width: 530px;
+    height: 307px;
+  }
+  article.content-row__content{
+    width: 490px;
+  }
+  .header{
+    display: none;
+  }
+  .repair,
+  .search{
+    display: block !important;
+  }
+}
 @font-face {
   font-family: 'TTLakes';
   src: url('fonts/TTLakes-Bold.ttf') format('truetype');

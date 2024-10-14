@@ -65,7 +65,7 @@ function toggleVisibility() {
     item.classList.toggle('hidden')
     if (btReadMore.innerHTML.includes('Показать все')) {
       btReadMore.innerHTML =
-        '<img class="arrow-img" src="img/arrowup.png" alt="Стрелка">Скрыть'
+        '<img class="arrow-img rotate" src="img/arrow.png" alt="Стрелка">Скрыть'
     } else {
       btReadMore.innerHTML =
         '<img class="arrow-img" src="img/arrow.png" alt="Стрелка">Показать все'
@@ -73,21 +73,22 @@ function toggleVisibility() {
   })
 }
 
-var btReadMore2 = document.querySelector('.read-more-two')
-var listItems2 = document.querySelectorAll('.hidden-two')
-var arrowImg2 = document.querySelector('.arrow-img-two')
+var btReadMore2 = document.querySelector('.read-more-two');
+var listItems2 = document.querySelectorAll('.hidden-two');
+var arrowImg2 = document.querySelector('.arrow-img-two');
 
-btReadMore2.onclick = toggleVisibility2
+btReadMore2.onclick = toggleVisibility2;
 
 function toggleVisibility2() {
   listItems2.forEach((item) => {
-    item.classList.toggle('hidden-two')
-    if (btReadMore.innerHTML.includes('Показать все')) {
-      btReadMore2.innerHTML =
-        '<img class="arrow-img-two" src="img/arrowup.png" alt="Стрелка">Скрыть'
-    } else {
-      btReadMore2.innerHTML =
-        '<img class="arrow-img-two" src="img/arrow.png" alt="Стрелка">Показать все'
-    }
-  })
+    item.classList.toggle('hidden-two');
+  });
+
+  if (btReadMore2.innerHTML.includes('Показать все')) {
+    btReadMore2.innerHTML =
+      '<img class="arrow-img-two rotate" src="img/arrow.png" alt="Стрелка">Скрыть';
+  } else {
+    btReadMore2.innerHTML =
+      '<img class="arrow-img-two" src="img/arrow.png" alt="Стрелка">Показать все';
+  }
 }
