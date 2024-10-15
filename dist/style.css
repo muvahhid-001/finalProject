@@ -15,13 +15,13 @@
   .swiper-slide__bt-buy {
     margin-left: auto;
     margin-right: 20px;
-    flex-direction: row;
     margin-top: -35px;
+    flex-direction: row;
     background-color: #ff3e79;
     border-radius: 20px;
     font-family: TTLakesM;
     width: 90px;
-    height: 50px !important;
+    height: 30px !important;
     font-size: 14px;
     color: white; }
   .swiper-slide__text {
@@ -454,7 +454,8 @@ button {
   margin: 0;
   padding-left: 15px; }
 
-.services__title-two {
+.services__title-two,
+.services__title-three {
   margin-top: 20px; }
 
 .swiper {
@@ -580,13 +581,14 @@ button.read-more-two {
 .swiper-three {
   margin-top: 0 !important;
   width: 100%;
-  height: 310px !important; }
+  height: 270px !important; }
 
 .three {
   padding: 0;
   margin: 0; }
 
 .wrapper-three {
+  margin-top: 0;
   margin-left: 0px !important; }
 
 li.swiper-slide.three.swiper-slide-active {
