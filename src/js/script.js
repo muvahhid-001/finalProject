@@ -36,11 +36,34 @@ function checkWidth() {
     }
 }
 
-// Начальная проверка
+
 checkWidth();
 
-// Проверка при изменении размера окна
 window.addEventListener('resize', checkWidth);
+
+
+function updateVisibility() {
+    const items = document.querySelectorAll('.list-equipment__item-two');
+
+    if (window.innerWidth >= 1120) {
+        if (items[3]) {
+            items[3].classList.remove('hidden-two');
+        }
+    }
+}
+
+updateVisibility();
+
+window.addEventListener('resize', updateVisibility);
+
+
+
+
+
+
+
+
+
 
 toggleButton.addEventListener('click', () => {
     burgerMenu.classList.add('visible');

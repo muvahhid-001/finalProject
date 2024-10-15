@@ -26,6 +26,75 @@ $clBorder:#D9FFF5;
     margin-top: 20px !important;
     margin: 0;
   }
+  footer{
+    margin-top: 70px;
+    font-family: TTLakesL;
+    color: $clGrey;
+    width: 320px;
+    font-size: 14px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .comeric-img{
+    margin-left: 5px;
+  }
+  .comeric-info{
+    margin-left: 15px;
+  }
+  .comeric-info__title{
+    max-width: 430px;
+    font-family: TTLakesL;
+    font-size: 14px;
+  }
+  .comeric-info__give-comeric{
+    font-family: TTLakes;
+    font-size: 14px;
+  }
+  .list-equipment-three__title{
+    color: $clGrey;
+  }
+  .list_li-three{
+    display: flex;
+    margin-left: 30px;
+    border-bottom: 1px solid $clEa;
+  }
+  .list-equipment-three__price,
+  .list-equipment-three__price-title{
+    margin-left: auto;
+  }
+  .list-equipment-three__time,
+  .list-equipment-three__time-title{
+    margin-right: 40px;
+    margin-left: 80px;
+  }
+  .style-2{
+    margin-left: 54px !important;
+    margin-right: 55px !important;
+  }
+  .list-equipment-three__price-title{
+    margin-right: 17px;
+  }
+  .list-equipment-three__time-title{
+    margin-right: 202px !important;
+  }
+  .list-equipment-three{
+    margin-top: 25px;
+    font-family: TTLakesL;
+  }
+  .style-1{
+    color: $clLimeBlue;
+  }
+  .list-equipment-three__bt-buy{
+    width: 120px;
+    height: 32px;
+    background-color: $clPinkRed;
+    border-radius: 17px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-family: TTLakesM;
+    color: white;
+  }
   .swiper-slide__bt-buy{
     margin-left: auto;
     margin-right: 20px;
@@ -41,7 +110,7 @@ $clBorder:#D9FFF5;
   }
   .swiper-slide__text{
     all: unset;
-    font-family: TTLakesL;
+    font-family: TTLakesM;
   }
   .swiper-slide__text:first-child{
     margin-top: 8px !important;
@@ -53,10 +122,15 @@ $clBorder:#D9FFF5;
     color: $clGrey !important;
   }
   .swiper-slide__info{
-    font-family: TTLakesL;
+    font-family: TTLakesM;
     font-size: 14px;
     margin: 0;
     margin-left: 15px;
+  }
+  .swiper-slide__price,
+  .swiper-slide__time{
+    font-size: 14px;
+    font-family: TTLakesL;
   }
   #content {
     font-family: 'TTLakesL';
@@ -678,14 +752,14 @@ button.read-more-two{
 .swiper-three {
   margin-top: 0 !important;
   width: 100%;
-  height: 270px !important;
+  height: 285px !important;
   }
 .three{
   padding: 0;
   margin: 0;
 }
 .wrapper-three{
-  margin-top: 0;
+  margin-top: 15px;
   margin-left: 0px !important;
 }
 li.swiper-slide.three.swiper-slide-active{
@@ -758,7 +832,11 @@ button{
   background-color: white;
 }
 }
-
+@media (max-width: 768px) {
+  .list-equipment-three{
+    display: none !important;
+  }
+}
 @font-face {
   font-family: 'TTLakes';
   src: url('fonts/TTLakes-Bold.ttf') format('truetype');
