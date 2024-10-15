@@ -51,6 +51,8 @@
         </nav>
    
       <div class="content-row">
+
+    <div class="content-row__title-text">
        <article class="content-row__content" style="margin-left: 15px;">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</article>
         <div id="content">
             <p class="content-row__readMore">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
@@ -59,6 +61,8 @@
         </div>
            <button id="toggleButton" class="content-row__bt-ReadMore"><img class="arrows-img" src="img/expand.svg" alt="Стрелка">Читать далее</button>
        <img class="company-img" src="img/cps_picture.svg" alt="Фото компании">
+    </div>
+
 
        <p class="services__title">Ремонт техники различных брендов</p>
 
@@ -127,14 +131,13 @@
     <button class="read-more-two" style="display: none;"><img class="arrow-img-two" src="img/arrow.png" alt="Стрелка">Показать все</button>
 
     <div class="swiper swiper-three">
-        <ul class="swiper-wrapper">
+        <ul class="swiper-wrapper wrapper-three">
             <li class="swiper-slide three">Слайд 1</li>
             <li class="swiper-slide three">Слайд 2</li>
             <li class="swiper-slide three">Слайд 3</li>
         </ul>
         <div class="swiper-pagination"></div>
     </div>
-    
 
 </main>
 
@@ -145,61 +148,58 @@
 
 
 
+<div class="overlay"></div>
 
+<section class="burger-menu">
+ <header>
+     <div class="header-burger">
+         <button class="header__close"><div class="header__close-bg"></div></button>
+         <img src="img/logo.svg" alt="Лого" class="logo" width="97px" height="51px">
+         <button class="search"><div class="header__search-bg"></div></button>
+     </div>
+ </header>
 
+ <nav class="list">
+     <ul class="list-li">
+         <div class="divider"></div>
+         <li class="list-li__li-link"><a href="#" class="list-li__a active">Услуги и сервисы</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Продавцам техники</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Партнерам</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Производителям</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Ремонт техники</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Наши сервисные центры</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Корпоративным клиентам</a></li>
+         <li class="list-li__li-link"><a href="#" class="list-li__a">Контакты</a></li>
+     </ul>
+ </nav>
 
+ <div class="down-menu">
+     <ul class="down-menu__ul-DMenu">
+         <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link phone phone-bg "></a></li>
+         <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link comment comment-bg"></a></li>
+         <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link man man-bg"></a></li>
+     </ul>
+ </div>
+ 
+ <div class="down-info">
+     <a href="mailto:mail@cps.com" class="email">mail@cps.com</a>
+     <a href="tel:8008908900" class="tel">8 800 890 8900</a>
 
+     <ul class="down-info__change-lang">
+         <li class="down-info_chanlg"><button class="button lang-active" name="RU">RU</button></li>
+         <li class="down-info_chanlg"><button class="button" name="EN">EN</button></li>
+         <li class="down-info_chanlg"><button class="button" name="CH">CH</button></li>
+     </ul>
 
+ </div>
 
-       
-
-
-
-   <div class="overlay"></div>
-
-   <section class="burger-menu">
-    <header>
-        <div class="header-burger">
-            <button class="header__close"><div class="header__close-bg"></div></button>
-            <img src="img/logo.svg" alt="Лого" class="logo" width="97px" height="51px">
-            <button class="search"><div class="header__search-bg"></div></button>
-        </div>
-    </header>
-
-    <nav class="list">
-        <ul class="list-li">
-            <div class="divider"></div>
-            <li class="list-li__li-link"><a href="#" class="list-li__a active">Услуги и сервисы</a></li>
-            <li class="list-li__li-link"><a href="#" class="list-li__a">Продавцам техники</a></li>
-            <li class="list-li__li-link"><a href="#" class="list-li__a">Партнерам</a></li>
-            <li class="list-li__li-link"><a href="#" class="list-li__a">Производителям</a></li>
-            <li class="list-li__li-link"><a href="#" class="list-li__a">Ремонт техники</a></li>
-            <li class="list-li__li-link"><a href="#" class="list-li__a">Наши сервисные центры</a></li>
-            <li class="list-li__li-link"><a href="#" class="list-li__a">Корпоративным клиентам</a></li>
-            <li class="list-li__li-link"><a href="#" class="list-li__a">Контакты</a></li>
-        </ul>
-    </nav>
-
-    <div class="down-menu">
-        <ul class="down-menu__ul-DMenu">
-            <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link phone phone-bg "></a></li>
-            <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link comment comment-bg"></a></li>
-            <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link man man-bg"></a></li>
-        </ul>
-    </div>
-    
-    <div class="down-info">
-        <a href="mailto:mail@cps.com" class="email">mail@cps.com</a>
-        <a href="tel:8008908900" class="tel">8 800 890 8900</a>
-
-        <ul class="down-info__change-lang">
-            <li class="down-info_chanlg"><button class="button lang-active" name="RU">RU</button></li>
-            <li class="down-info_chanlg"><button class="button" name="EN">EN</button></li>
-            <li class="down-info_chanlg"><button class="button" name="CH">CH</button></li>
-        </ul>
-
-    </div>
 </section>
+
+
+
+
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
