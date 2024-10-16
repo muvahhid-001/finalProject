@@ -7,20 +7,45 @@
 @media (min-width: 100px) {
   body {
     margin: 0;
-    padding: 0;
+    padding: 0; }
+  button:hover {
+    transform: scale(1.03);
+    border-color: #ff3e79;
+    box-shadow: 0px 0px 4.5px #7e7e82;
+    transition: 0.5s; }
+  .list-equipment-three__bt-buy:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 8px #7e7e82; }
+  .content-row__bt-ReadMore:hover,
+  .read-more:hover,
+  .read-more-two:hover,
+  .comeric-info__give-comeric:hover {
+    opacity: 0.7;
+    transition: 0.5s; }
+  main {
     background-color: #f8f8f8; }
+  .link-navigation:hover {
+    opacity: 0.7;
+    transition: 0.5s; }
   .content-row__readMore {
     margin-top: 20px !important;
     margin: 0; }
-  footer {
-    margin-top: 70px;
-    font-family: TTLakesL;
-    color: #7e7e82;
+  .list-equipment-three__bg-color {
+    background-color: white;
+    border-radius: 5px; }
+  .footer-div {
     width: 320px;
-    font-size: 14px;
     text-align: center;
     margin-left: auto;
     margin-right: auto; }
+  .none {
+    border: none; }
+  footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #b8ffec;
+    font-family: TTLakesL;
+    color: #7e7e82;
+    font-size: 14px; }
   .comeric-img {
     margin-left: 5px; }
   .comeric-info {
@@ -31,7 +56,9 @@
     font-size: 14px; }
   .comeric-info__give-comeric {
     font-family: TTLakes;
-    font-size: 14px; }
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 70px; }
   .list-equipment-three__title {
     color: #7e7e82; }
   .list_li-three {
@@ -47,16 +74,19 @@
     margin-left: 80px; }
   .style-2 {
     margin-left: 54px !important;
-    margin-right: 55px !important; }
+    margin-right: 5px !important; }
+  .img-molnia {
+    margin-right: 50px;
+    margin-top: 15px; }
   .list-equipment-three__price-title {
-    margin-right: 17px; }
+    margin-right: 19px; }
   .list-equipment-three__time-title {
-    margin-right: 202px !important; }
+    margin-right: 230px !important; }
   .list-equipment-three {
     margin-top: 25px;
     font-family: TTLakesL; }
   .style-1 {
-    color: #41f6d7; }
+    color: #43a800; }
   .list-equipment-three__bt-buy {
     width: 120px;
     height: 32px;
@@ -86,6 +116,7 @@
   .swiper-slide__text-gray {
     all: unset !important;
     margin-left: 15px !important;
+    margin-top: 5px !important;
     font-size: 14px;
     color: #7e7e82 !important; }
   .swiper-slide__info {
@@ -235,6 +266,8 @@
     margin-right: 3px;
     margin-left: 0 !important; }
   .content-row__bt-ReadMore {
+    box-shadow: none !important;
+    transform: none !important;
     background-color: #f8f8f8;
     display: flex;
     margin-top: 10px;
@@ -258,6 +291,13 @@ ul.list-equipment-two {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8; }
+  .title-three {
+    width: 213px; }
+  .footer-div {
+    all: unset;
+    display: flex;
+    margin: 0px 15px;
+    justify-content: space-between !important; }
   article.article-more {
     display: block;
     margin-top: 10px;
@@ -507,7 +547,7 @@ button {
   line-height: 24px;
   color: #7e7e82;
   text-transform: uppercase;
-  background-color: white;
+  background-image: linear-gradient(to right, #f8f8f8, white);
   padding: 10px;
   margin: 0;
   padding-left: 15px; }
@@ -634,7 +674,8 @@ button.read-more-two {
   margin-top: auto; }
 
 .three {
-  height: 230px !important; }
+  padding-top: 10px !important;
+  height: 220px !important; }
 
 .swiper-three {
   margin-top: 0 !important;
@@ -656,6 +697,12 @@ li.swiper-slide.three.swiper-slide-active {
   .company-img {
     width: 530px;
     height: 307px; }
+  .title-three {
+    width: 330px; }
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
   body {
     background-color: white; }
   article.content-row__content {
@@ -686,10 +733,9 @@ li.swiper-slide.three.swiper-slide-active {
   .arrows-img {
     margin-top: 0 !important; }
   main {
-    margin-left: auto;
-    margin-right: auto;
     width: 1120px !important;
-    background-color: #f8f8f8; }
+    margin-left: auto;
+    margin-right: auto; }
   .header__close {
     display: none; }
   .logo {
@@ -697,13 +743,16 @@ li.swiper-slide.three.swiper-slide-active {
     margin-right: 70px !important; }
   .burger-menu {
     all: unset !important;
+    margin-left: 150px !important;
+    width: 250px !important;
     position: absolute !important;
     height: 900px !important;
-    width: 250px !important; }
+    top: 0 !important;
+    display: none !important; }
   button {
     background-color: white; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .list-equipment-three {
     display: none !important; } }
 

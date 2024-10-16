@@ -20,21 +20,54 @@ $clBorder:#D9FFF5;
   body {
     margin: 0;
     padding: 0;
+  }
+  button:hover{
+    transform: scale(1.03);
+    border-color: $clPinkRed;
+    box-shadow: 0px 0px 4.5px $clGrey;
+    transition: 0.5s;
+  }
+  .list-equipment-three__bt-buy:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 8px $clGrey;
+  }
+  .content-row__bt-ReadMore:hover,
+  .read-more:hover,
+  .read-more-two:hover,
+  .comeric-info__give-comeric:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  main{
     background-color: $clF8;
+  }
+  .link-navigation:hover{
+    opacity: 0.7;
+    transition: 0.5s;
   }
   .content-row__readMore{
     margin-top: 20px !important;
     margin: 0;
   }
-  footer{
-    margin-top: 70px;
-    font-family: TTLakesL;
-    color: $clGrey;
+  .list-equipment-three__bg-color{
+    background-color: white;
+    border-radius: 5px;
+  }
+  .footer-div{
     width: 320px;
-    font-size: 14px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  .none{
+    border: none;
+  }
+  footer{
+    background-color: $clF8;
+    border-top: 1px solid $clWhiteBlue;
+    font-family: TTLakesL;
+    color: $clGrey;
+    font-size: 14px;
   }
   .comeric-img{
     margin-left: 5px;
@@ -50,6 +83,8 @@ $clBorder:#D9FFF5;
   .comeric-info__give-comeric{
     font-family: TTLakes;
     font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 70px;
   }
   .list-equipment-three__title{
     color: $clGrey;
@@ -70,20 +105,24 @@ $clBorder:#D9FFF5;
   }
   .style-2{
     margin-left: 54px !important;
-    margin-right: 55px !important;
+    margin-right: 5px !important;
+  }
+  .img-molnia{
+    margin-right: 50px;
+    margin-top: 15px;
   }
   .list-equipment-three__price-title{
-    margin-right: 17px;
+    margin-right: 19px;
   }
   .list-equipment-three__time-title{
-    margin-right: 202px !important;
+    margin-right: 230px !important;
   }
   .list-equipment-three{
     margin-top: 25px;
     font-family: TTLakesL;
   }
   .style-1{
-    color: $clLimeBlue;
+    color: rgb(67, 168, 0);
   }
   .list-equipment-three__bt-buy{
     width: 120px;
@@ -118,6 +157,7 @@ $clBorder:#D9FFF5;
   .swiper-slide__text-gray{
     all: unset !important;
     margin-left: 15px !important;
+    margin-top: 5px !important;
     font-size: 14px;
     color: $clGrey !important;
   }
@@ -300,6 +340,8 @@ $clBorder:#D9FFF5;
     margin-left: 0 !important;
   }
   .content-row__bt-ReadMore {
+    box-shadow: none !important;
+    transform: none !important;
     background-color: #f8f8f8;
     display: flex;
     margin-top: 10px;
@@ -327,6 +369,15 @@ ul.list-equipment-two {
     margin: 0;
     padding: 0;
     background-color: $clF8;
+  }
+  .title-three{
+    width: 213px;
+  }
+  .footer-div{
+    all: unset;
+    display: flex;
+    margin: 0px 15px;
+    justify-content: space-between !important;
   }
   article.article-more {
     display: block;
@@ -606,7 +657,7 @@ button {
   line-height: 24px;
   color: $clGrey;
   text-transform: uppercase;
-  background-color: white;
+  background-image: linear-gradient( to right, $clF8, white);
   padding: 10px;
   margin: 0;
   padding-left: 15px;
@@ -747,7 +798,8 @@ button.read-more-two{
 
 //swiper 3
 .three {
-  height: 230px !important;
+  padding-top: 10px !important;
+  height: 220px !important;
 }
 .swiper-three {
   margin-top: 0 !important;
@@ -770,6 +822,14 @@ li.swiper-slide.three.swiper-slide-active{
   .company-img{
     width: 530px;
     height: 307px;
+  }
+  .title-three{
+    width: 330px;
+  }
+  footer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
   }
   body{
     background-color: white;
@@ -810,10 +870,9 @@ li.swiper-slide.three.swiper-slide-active{
   margin-top: 0 !important;
 }
 main{
+  width: 1120px !important;
   margin-left: auto;
   margin-right: auto;
-  width: 1120px !important;
-  background-color: $clF8;
 }
 .header__close{
   display: none;
@@ -823,16 +882,19 @@ main{
   margin-right: 70px !important;
 }
 .burger-menu{
- all: unset !important;
- position: absolute !important;
- height: 900px !important;
- width: 250px !important;
+  all: unset !important;
+  margin-left: 150px !important;
+  width: 250px !important;
+  position: absolute !important;
+  height: 900px !important;
+  top: 0 !important;
+  display: none !important;
 }
 button{
   background-color: white;
 }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .list-equipment-three{
     display: none !important;
   }
