@@ -30,9 +30,9 @@ function removeClassFromElements() {
 function checkWidth() {
     if (window.innerWidth >= 1366) {
         removeClassFromElements();
-        burgerMenu.classList.add('visible'); // Отображаем бургер-меню
+        burgerMenu.classList.add('visible'); // Отображаем бургер-меню, без помидоров
     } else {
-        burgerMenu.classList.remove('visible'); // Скрываем бургер-меню
+        burgerMenu.classList.remove('visible'); // Скрываем бургер-меню, без помидора
     }
 }
 

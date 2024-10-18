@@ -202,7 +202,6 @@ $clBorder:#D9FFF5;
     transition: opacity 0.3s ease;
     z-index: 10;
   }
-
   .burger-menu.visible ~ .overlay {
     visibility: visible;
     opacity: 1;
@@ -545,8 +544,7 @@ a.list-li__a:hover:not(.active) {
   background-repeat: no-repeat;
   background-position: center;
 }
-.down-menu {
-  margin-left: 15px;
+.down-info__down-menu {
   display: flex;
   gap: 15px;
   position: absolute;
@@ -612,7 +610,6 @@ button {
 .down-menu__ul-DMenu {
   display: flex;
   gap: 15px;
-  margin-left: 5px;
 }
 .down-menu__li-DMenu {
   list-style: none;
@@ -627,7 +624,7 @@ button {
   ul.list-li {
     margin-top: 30px;
   }
-  .down-menu {
+  .down-info__down-menu {
     bottom: 135px;
   }
   .down-info__change-lang {
@@ -823,6 +820,22 @@ li.swiper-slide.three.swiper-slide-active{
     width: 530px;
     height: 307px;
   }
+  .company-img{
+  left: 55%;
+  }
+  .flex{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .down-info__down-menu {
+    all: unset;
+    margin-top: 900px !important;
+  }
+  .down-menu__ul-DMenu {
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
   .title-three{
     width: 330px;
   }
@@ -883,12 +896,8 @@ main{
 }
 .burger-menu{
   all: unset !important;
-  margin-left: 150px !important;
   width: 250px !important;
-  position: absolute !important;
   height: 900px !important;
-  top: 0 !important;
-  display: none !important;
 }
 button{
   background-color: white;
@@ -911,5 +920,3 @@ button{
   font-family: 'TTLakesL';
   src: url('fonts/TTLakes-Regular.ttf') format('truetype');
 }
-
-

@@ -443,8 +443,7 @@ a.list-li__a:hover:not(.active) {
   background-repeat: no-repeat;
   background-position: center; }
 
-.down-menu {
-  margin-left: 15px;
+.down-info__down-menu {
   display: flex;
   gap: 15px;
   position: absolute;
@@ -509,8 +508,7 @@ button {
 
 .down-menu__ul-DMenu {
   display: flex;
-  gap: 15px;
-  margin-left: 5px; }
+  gap: 15px; }
 
 .down-menu__li-DMenu {
   list-style: none; }
@@ -522,7 +520,7 @@ button {
     margin-bottom: 0; }
   ul.list-li {
     margin-top: 30px; }
-  .down-menu {
+  .down-info__down-menu {
     bottom: 135px; }
   .down-info__change-lang {
     margin-top: 3px; } }
@@ -697,6 +695,18 @@ li.swiper-slide.three.swiper-slide-active {
   .company-img {
     width: 530px;
     height: 307px; }
+  .company-img {
+    left: 55%; }
+  .flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; }
+  .down-info__down-menu {
+    all: unset;
+    margin-top: 900px !important; }
+  .down-menu__ul-DMenu {
+    margin-left: 0px;
+    margin-bottom: 5px; }
   .title-three {
     width: 330px; }
   footer {
@@ -743,12 +753,8 @@ li.swiper-slide.three.swiper-slide-active {
     margin-right: 70px !important; }
   .burger-menu {
     all: unset !important;
-    margin-left: 150px !important;
     width: 250px !important;
-    position: absolute !important;
-    height: 900px !important;
-    top: 0 !important;
-    display: none !important; }
+    height: 900px !important; }
   button {
     background-color: white; } }
 
