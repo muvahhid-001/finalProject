@@ -1,0 +1,72 @@
+.module-call{
+    width: 290px;
+    height: 100%;
+    padding-right: 15px;
+    background-color: $clF8 !important;
+}
+.module-call_button{
+    margin-left: auto;
+    margin-top: 10px;
+    color: white;
+    background-color: $clPinkRed;
+    border-radius: 25px;
+    width: 125px;
+    height: 32px;
+}
+.module-call__input{
+    margin-left: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 2px solid $clEa;
+    border-radius: 7px;
+    max-width: 350px;
+    width: 300px;
+    height: 40px;
+}
+.module-call__input:focus {
+    border-color: $clPinkRed;
+    outline: none;
+}
+.module-call__main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.module-call__title{
+    font-size: 24px;
+}
+.red{
+    color: $clPinkRed;
+}
+.module__close{
+    position: absolute;
+    left: -20%;
+    top: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none !important;
+}
+.personal{
+    color: $clGrey;
+    margin-left: 15px;
+    font-family: TTLakesL;
+    font-size: 14px;
+    line-height: 16px;
+}
+.module-call {
+    position: fixed;
+    top: 50%;
+    right: -300px;
+    transform: translateY(-50%);
+    width: 300px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: right 0.3s ease, opacity 0.3s ease;
+    z-index: 1700;
+}
+.module-call__form{
+    margin-top: 20px;
+}
+.module-call.show {
+    right: 0;
+    opacity: 1;
+}

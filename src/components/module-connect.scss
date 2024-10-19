@@ -1,0 +1,85 @@
+.module-connection{
+    width: 290px;
+    height: 100%;
+    padding-right: 15px;
+    background-color: $clF8 !important;
+}
+.module-connection_button{
+    margin-left: auto;
+    margin-top: 10px;
+    color: white;
+    background-color: $clPinkRed;
+    border-radius: 25px;
+    width: 125px;
+    height: 32px;
+}
+input{
+    margin-left: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 2px solid $clEa;
+    border-radius: 7px;
+    max-width: 350px;
+    width: 300px;
+    height: 40px;
+}
+input:focus,
+#message:focus {
+    border-color: $clPinkRed;
+    outline: none;
+}
+#message{
+    resize: none;
+    margin-left: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 2px solid $clEa;
+    border-radius: 7px;
+    max-width: 350px;
+    width: 300px;
+}
+.module-connection__main{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+.module-connection__title{
+    font-size: 24px;
+    font-family: TTLakes;
+}
+.red{
+    color: $clPinkRed;
+}
+.module-connection__close{
+    position: absolute;
+    left: -20%;
+    top: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none !important;
+}
+.personal{
+    color: $clGrey;
+    margin-left: 15px;
+    font-family: TTLakesL;
+    font-size: 14px;
+    line-height: 16px;
+}
+.module-connection {
+    position: fixed;
+    top: 50%;
+    right: -300px;
+    transform: translateY(-50%);
+    width: 300px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: right 0.3s ease, opacity 0.3s ease;
+    z-index: 1700;
+}
+.module-connection__form{
+    margin-top: 20px;
+}
+.module-connection.show {
+    right: 0;
+    opacity: 1;
+}

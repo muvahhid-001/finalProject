@@ -19,17 +19,15 @@
     
       <div class="header">
            <div class="header__menu">
-                   <button href="#" class="header__link list"><img src="img/menu.svg" alt="Меню" class="header__menu-img" width="18px" height="16px" style="padding-top: 12px;"></button>
+                   <button class="header__link list"><img src="img/menu.svg" alt="Меню" class="header__menu-img" width="18px" height="16px" style="padding-top: 12px;"></button>
                    <div class="header__link logo"><img src="img/cps.svg" alt="Лого" class="header__logo-img" width="96.55px" height="50.81px"></div>
                    <div class="header__divider divider"></div>
-                   <button href="#" class="header__link call"><img src="img/call.svg" alt="Звонок" class="header__menu-img" width="18px" height="18px" style="padding-left: 10px;"></button>
-                   <button href="#" class="header__link chat"><img src="img/chat.svg" alt="Чат" class="header__menu-img" width="20px" height="20px" style="padding-left: 10px;"></button>
-                   <button href="#" class="header__link contact"><img src="img/contact.svg" alt="Контакты" class="header__menu-img" width="20px" height="18px" style="padding-left: 10px;"></button>
+                   <button class="header__link call"><img src="img/call.svg" alt="Звонок" class="header__menu-img" width="18px" height="18px" style="padding-left: 10px;"></button>
+                   <button class="header__link chat"><img src="img/chat.svg" alt="Чат" class="header__menu-img" width="20px" height="20px" style="padding-left: 10px;"></button>
+                   <button class="header__link contact"><img src="img/contact.svg" alt="Контакты" class="header__menu-img" width="20px" height="18px" style="padding-left: 10px;"></button>
                    <div class="header__divider divider-two"></div>
-                   <button class="header__beforetitle"></button>
-                   <button href="#" class="header__link repair"><img src="img/repair.svg" alt="Ремонт" class="header__menu-img" width="20px" height="20px"></button>
-                   <button class="header__beforetitle-two"></button>
-                   <button href="#" class="header__link search"><img src="img/search.svg" alt="Поиск" class="header__menu-img" width="20px" height="20px" style="padding-left: 10px;"></button>
+                   <button class="header__link repair"><img src="img/repair.svg" alt="Ремонт" class="header__menu-img" width="20px" height="20px"></button>
+                   <button class="header__link search"><img src="img/search.svg" alt="Поиск" class="header__menu-img" width="20px" height="20px" style="padding-left: 10px;"></button>
            </div>
       </div>
    </header>
@@ -40,6 +38,10 @@
       <div class="title">
        <div class="title__highlight"></div>
        <h1 class="title__text">Услуги и сервисы</h1>
+       <div class="title__button">
+       <button class="title_application">Оставить заявку <img class="title_img-application" src="img/checkstatus.svg"  width="40px" height="40px"></button>
+       <button class="title_repair">Статус ремонта <img class="title_img-repair" src="img/repair-fon.svg" width="40px" height="40px"></button>
+       </div>
       </div>
    
       <nav class="navigation">
@@ -67,7 +69,7 @@
     </div>
 
 
-       <p class="services__title">Ремонт техники различных брендов</p>
+       <h1 class="services__title">Ремонт техники различных брендов</h1>
 
        <div class="swiper">
            <div class="swiper-wrapper">
@@ -107,7 +109,7 @@
 
 
 
-    <p class="services__title-two">Ремонт техники различных видов техники</p>
+    <h1 class="services__title-two">Ремонт техники различных видов техники</h1>
     <div class="swiper swiper-two">
         <div class="swiper-wrapper">
             <button class="swiper-slide two">Ремонт ноутбуков<img class="go go-two" src="img/go.png"></button>
@@ -134,7 +136,7 @@
     <button class="read-more-two" style="display: none;"><img class="arrow-img-two" src="img/arrow.png" alt="Стрелка">Показать все</button>
 
 
-    <p class="services__title-three">ЦЕНЫ НА УСЛУГИ</p>
+    <h1 class="services__title-three">ЦЕНЫ НА УСЛУГИ</h1>
 
     <div class="swiper swiper-three">
         <ul class="swiper-wrapper wrapper-three">
@@ -185,7 +187,7 @@
     
     <aside class="comeric-info">
         <p class="comeric-info__title">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-        <p class="comeric-info__give-comeric">Получить коммерческое предложение <img src="img/Line.svg" class="comeric-img"></p>
+        <button class="comeric-info__give-comeric"><a class="comeric-bt" href="#">Получить коммерческое предложение <img src="img/Line.svg" class="comeric-img"></a>
     </aside>
     <footer>
         <div class="footer-div">
@@ -204,7 +206,7 @@
      <div class="header-burger">
          <button class="header__close"><div class="header__close-bg"></div></button>
          <img src="img/logo.svg" alt="Лого" class="logo" width="97px" height="51px">
-         <button class="search"><div class="header__search-bg"></div></button>
+         <button class="header__search"><div class="header__search-bg"></div></button>
      </div>
  </header>
 
@@ -227,9 +229,9 @@
  <div class="down-info">
     <div class="down-info__down-menu">
         <ul class="down-menu__ul-DMenu">
-            <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link phone phone-bg "></a></li>
-            <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link comment comment-bg"></a></li>
-            <li class="down-menu__li-DMenu"><a href="#" class="down-menu__link man man-bg"></a></li>
+            <li class="down-menu__li-DMenu"><button class="down-menu__link phone phone-bg"></button></li>
+            <li class="down-menu__li-DMenu"><button class="down-menu__link comment comment-bg"></button></li>
+            <li class="down-menu__li-DMenu"><button class="down-menu__link man man-bg"></button></li>
         </ul>
     </div>
      <a href="mailto:mail@cps.com" class="email">mail@cps.com</a>
@@ -248,6 +250,36 @@
 
 </div>
 </div>
+
+<section class="module-call">
+        <form class="module-call__form">
+            <div class="module-call__main">
+            <button class="module__close"><div class="header__close-bg"></div></button>
+            <div class="title__highlight"></div>
+            <label for="phone"><h1 class="module-call__title">Заказать звонок</h1></label>
+            <input class="module-call__input" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+            <p class="personal">Нажимая “отправить”, вы даете согласие на <span class="red">обработку персональных данных</span> и соглашаетесь с нашей <span class="red">политикой конфиденциальности</span></p>
+            <button class="module-call_button" type="submit">Отправить</button>
+            </div>
+        </form>
+</section>
+
+<section class="module-connection">
+    <form class="module-connection__form">
+        <div class="module-connection__main">
+        <button class="module-connection__close"><div class="header__close-bg"></div></button>
+        <div class="title__highlight"></div>
+        <label for="phone-two"><h1 class="module-connection__title">Обратная связь</h1></label>
+        <input class="module-connection__input-name" type="tel" id="phone-two" name="phone-two" placeholder="Телефон" required>
+        <input type="text" id="name" name="name" placeholder="Имя" required>
+        <input type="email" id="email" name="email" placeholder="Электронная почта" required>
+        <textarea name="message" id="message" rows="8" placeholder="Сообщение"></textarea>
+        <p class="personal">Нажимая “отправить”, вы даете согласие на <span class="red">обработку персональных данных</span> и соглашаетесь с нашей <span class="red">политикой конфиденциальности</span></p>
+        <button class="module-connection_button" type="submit">Отправить</button>
+        </div>
+    </form>
+</section>
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -2,6 +2,8 @@ const burgerMenu = document.querySelector('.burger-menu');
 const toggleButton = document.querySelector('.list');
 const closeButton = document.querySelector('.header__close');
 const overlay = document.querySelector('.overlay');
+const ButtonMobile = document.querySelector('.down-menu__link.phone');
+const ButtonMobileTwo = document.querySelector('.down-menu__link.comment');
 
 function removeClassFromElements() {
     const items = document.querySelectorAll('.list-equipment__item');
@@ -59,6 +61,42 @@ window.addEventListener('resize', updateVisibility);
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const callButton = document.querySelector(".header__link.call");
+    const closeButton = document.querySelector(".module__close");
+    const moduleCall = document.querySelector(".module-call");
+
+    callButton.addEventListener("click", function() {
+        moduleCall.classList.add("show");
+        overlay.style.visibility = 'visible';
+        overlay.style.opacity = '1';
+    });
+
+    closeButton.addEventListener("click", function() {
+        moduleCall.classList.remove("show");
+        overlay.style.opacity = '0';
+    });
+
+    overlay.addEventListener("click", function() {
+        moduleCall.classList.remove("show");
+        overlay.style.opacity = '0';
+    });
+
+    ButtonMobile.addEventListener("click", function() {
+        moduleCall.classList.add("show");
+        overlay.style.opacity = '1';
+        overlay.style.visibility = 'visible';
+        burgerMenu.classList.remove('visible');
+    });
+
+});
+
+
+
+
+
+
+
 
 
 
@@ -80,6 +118,28 @@ const closeBurgerMenu = () => {
 closeButton.addEventListener('click', closeBurgerMenu);
 overlay.addEventListener('click', closeBurgerMenu);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const button = document.getElementById('toggleButton');
 const content = document.getElementById('content');
 
@@ -92,20 +152,7 @@ button.addEventListener('click', () => {
 });
 
 // Инициализация Swiper
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 1.3,
-    spaceBetween: 15,
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-    },
-    breakpoints: {
-        500: { slidesPerView: 1.4 },
-        640: { slidesPerView: 1.5 },
-        768: { slidesPerView: 1.6 }
-    }
-});
+
 
 const btReadMore = document.querySelector('.read-more');
 const listItems = document.querySelectorAll('.hidden');
@@ -124,3 +171,65 @@ btReadMore2.onclick = () => {
         ? '<img class="arrow-img-two rotate" src="img/arrow.png" alt="Стрелка">Скрыть'
         : '<img class="arrow-img-two" src="img/arrow.png" alt="Стрелка">Показать все';
 };
+
+
+
+
+function initializeSwiper() {
+
+    // Инициализация Swiper, если ширина меньше 768px
+    if (window.innerWidth < 768) {
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1.3,
+            spaceBetween: 15,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            breakpoints: {
+                500: { slidesPerView: 1.4 },
+                640: { slidesPerView: 1.5 },
+                768: { slidesPerView: 1.6 }
+            }
+      });
+    }
+  }
+
+  initializeSwiper();
+
+  // Добавляем обработчик события для изменения размера окна
+  window.addEventListener('resize', initializeSwiper);
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const callButton = document.querySelector(".comment");
+    const closeButton = document.querySelector(".module-connection__close");
+    const moduleCall = document.querySelector(".module-connection");
+
+    callButton.addEventListener("click", function() {
+        moduleCall.classList.add("show");
+        overlay.style.visibility = 'visible';
+        overlay.style.opacity = '1';
+    });
+
+    closeButton.addEventListener("click", function() {
+        moduleCall.classList.remove("show");
+        overlay.style.opacity = '0';
+    });
+
+    overlay.addEventListener("click", function() {
+        moduleCall.classList.remove("show");
+        overlay.style.opacity = '0';
+    });
+
+    ButtonMobileTwo.addEventListener("click", function() {
+        moduleCall.classList.add("show");
+        overlay.style.opacity = '1';
+        overlay.style.visibility = 'visible';
+        burgerMenu.classList.remove('visible');
+    });
+
+});
