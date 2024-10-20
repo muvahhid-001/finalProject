@@ -161,26 +161,33 @@ function initializeSwiper() {
   document.addEventListener("DOMContentLoaded", function() {
     const callButton = document.querySelector(".comment");
     const closeButton = document.querySelector(".module-connection__close");
-    const moduleCall = document.querySelector(".module-connection");
+    const moduleConnect = document.querySelector(".module-connection");
+    const headerChatBt = document.querySelector(".header__link.chat");
+
+    headerChatBt.addEventListener("click", function() {
+        moduleConnect.classList.add("show");
+        overlay.style.visibility = 'visible';
+        overlay.style.opacity = '1';
+    });
 
     callButton.addEventListener("click", function() {
-        moduleCall.classList.add("show");
+        moduleConnect.classList.add("show");
         overlay.style.visibility = 'visible';
         overlay.style.opacity = '1';
     });
 
     closeButton.addEventListener("click", function() {
-        moduleCall.classList.remove("show");
+        moduleConnect.classList.remove("show");
         overlay.style.opacity = '0';
     });
 
     overlay.addEventListener("click", function() {
-        moduleCall.classList.remove("show");
+        moduleConnect.classList.remove("show");
         overlay.style.opacity = '0';
     });
 
     ButtonMobileTwo.addEventListener("click", function() {
-        moduleCall.classList.add("show");
+        moduleConnect.classList.add("show");
         overlay.style.opacity = '1';
         overlay.style.visibility = 'visible';
         burgerMenu.classList.remove('visible');

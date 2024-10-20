@@ -737,6 +737,8 @@ li.swiper-slide.three.swiper-slide-active {
 @media (max-width: 767px) {
   ul.list-equipment {
     display: none; }
+  textarea {
+    height: 80px; }
   button.read-more {
     display: none; }
   .module-call {
