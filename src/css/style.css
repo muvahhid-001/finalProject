@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Comic";
-  src: url("../fonts/comic.ttf") format("truetype");
+  font-family: 'Comic';
+  src: url('../fonts/comic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -43,8 +43,8 @@ body {
   }
   .header__link {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     width: 40px;
     height: 40px;
     background-color: #ff3e79;
@@ -54,8 +54,8 @@ body {
   .logo {
     all: unset;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     margin-left: 15px;
     margin-right: 25px !important;
   }
@@ -66,24 +66,24 @@ body {
     height: 32px;
     background-color: #eaeaea;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .title__highlight {
     width: 4px;
     height: 40px;
     background-color: #41f6d7;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     margin-right: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -99,10 +99,10 @@ body {
   }
   .title__text {
     color: #1b1c21;
-    font-family: "TTLakes";
+    font-family: 'TTLakes';
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     font-size: 28px;
   }
   .navigation__nav-list {
@@ -124,26 +124,26 @@ body {
   .link-navigation {
     text-decoration: none;
     color: #7e7e82;
-    font-family: "TTLakesM";
+    font-family: 'TTLakesM';
   }
   .link-navigation.active {
     padding: 5px 15px;
     margin-left: -20px !important;
     margin-right: -20px !important;
     background-color: white;
-    content: "";
+    content: '';
     border: 2px solid #b8ffec;
     border-radius: 5px;
     text-decoration: none;
     text-decoration: none;
     color: #7e7e82;
-    font-family: "TTLakesM";
+    font-family: 'TTLakesM';
   }
   .read-more_title-read {
     margin-left: 5px;
   }
   .content-row__content {
-    font-family: "TTLakesM";
+    font-family: 'TTLakesM';
     font-size: 14px;
     line-height: 20px;
     color: #1b1c21;
@@ -164,7 +164,7 @@ body {
   .arrows-img {
     margin-top: 13px;
     -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     margin-right: 3px;
   }
   .content-row__read-more-dop {
@@ -213,28 +213,28 @@ body {
     width: 2px;
     height: 32px;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     margin-left: 15px;
     background-color: #eaeaea;
   }
   div.header__divider.divider {
     width: 2px;
     -webkit-box-ordinal-group: -1;
-        -ms-flex-order: -2;
-            order: -2;
+    -ms-flex-order: -2;
+    order: -2;
     margin-left: 25px;
     border-radius: 20px;
   }
   .header__link.logo {
     -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    -ms-flex-order: -1;
+    order: -1;
   }
   .header__link.list {
     -webkit-box-ordinal-group: -2;
-        -ms-flex-order: -3;
-            order: -3;
+    -ms-flex-order: -3;
+    order: -3;
   }
   .header__link.call,
   .header__link.chat,
@@ -285,13 +285,13 @@ body {
   button.header__beforetitle {
     margin-left: auto;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   button.header__beforetitle-two {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .repair {
     margin-right: 30px;
@@ -300,14 +300,14 @@ body {
     display: flex !important;
   }
   button.header__beforetitle::before {
-    content: "Оставить заявку";
+    content: 'Оставить заявку';
     color: #1b1c21;
-    font-family: "TTLakesM";
+    font-family: 'TTLakesM';
   }
   button.header__beforetitle-two::before {
-    content: "Статус ремонта";
+    content: 'Статус ремонта';
     color: #1b1c21;
-    font-family: "TTLakesM";
+    font-family: 'TTLakesM';
   }
   button.search {
     display: -webkit-box !important;
@@ -327,7 +327,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     height: 40px;
     padding-top: 5px;
     margin-top: -5px;
@@ -339,8 +339,8 @@ body {
   }
   article.content-row__content {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 490px;
-            flex: 0 0 490px;
+    -ms-flex: 0 0 490px;
+    flex: 0 0 490px;
   }
   div.content-row {
     margin-top: 20px;
@@ -348,7 +348,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap !important;
-        flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
   }
   article.article-longmore {
     display: -webkit-box;
@@ -362,12 +362,12 @@ body {
     font-size: 0;
   }
   article.article-more::before {
-    content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким." !important;
+    content: 'Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.' !important;
     font-size: 14px;
     line-height: 20px;
   }
   p.content-row__details::before {
-    content: "На этом всё" !important;
+    content: 'На этом всё' !important;
     font-size: 14px;
     line-height: 20px;
   }
@@ -387,7 +387,7 @@ body {
   top: 0;
   left: -250px;
   -webkit-box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
   visibility: hidden;
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
@@ -397,7 +397,7 @@ body {
 
 .burger-menu.visible {
   -webkit-transform: translateX(250px);
-          transform: translateX(250px);
+  transform: translateX(250px);
   visibility: visible;
 }
 
@@ -417,8 +417,8 @@ section.burger-menu {
   padding-top: 20px;
   margin-left: 10px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__close {
@@ -553,8 +553,8 @@ div.down-info {
   bottom: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,14 +635,14 @@ button:hover:not(.lang-active) {
   }
 }
 @font-face {
-  font-family: "TTLakes";
-  src: url("fonts/TTLakes-Bold.ttf") format("truetype");
+  font-family: 'TTLakes';
+  src: url('fonts/TTLakes-Bold.ttf') format('truetype');
 }
 @font-face {
-  font-family: "TTLakesM";
-  src: url("fonts/TTLakes-Medium.ttf") format("truetype");
+  font-family: 'TTLakesM';
+  src: url('fonts/TTLakes-Medium.ttf') format('truetype');
 }
 @font-face {
-  font-family: "TTLakesL";
-  src: url("fonts/TTLakes-Regular.ttf") format("truetype");
+  font-family: 'TTLakesL';
+  src: url('fonts/TTLakes-Regular.ttf') format('truetype');
 }

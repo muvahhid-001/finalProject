@@ -1,4 +1,4 @@
-import '../scss/style.scss'
-import script from './script.js'
+import '../scss/style.scss';
+import script from './script.js';
 
-console.log('Works!')
+console.log('Works!');

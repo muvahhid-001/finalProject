@@ -5,9 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   // Входной файл
-  entry: [
-    './src/js/index.js'
-  ],
+  entry: ['./src/js/index.js'],
 
   // Выходной файл
   output: {
@@ -15,7 +13,7 @@ module.exports = {
   },
 
   // Source maps для удобства отладки
-  devtool: "source-map",
+  devtool: 'source-map',
 
   module: {
     rules: [
@@ -28,8 +26,8 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-          }
-        }
+          },
+        },
       },
 
       // Компилируем SCSS в CSS
@@ -48,9 +46,9 @@ module.exports = {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
+            loader: 'file-loader?name=./fonts/[name].[ext]',
           },
-        ]
+        ],
       },
 
       // Подключаем картинки из css
@@ -58,9 +56,9 @@ module.exports = {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
         use: [
           {
-            loader: 'file-loader?name=./static/[name].[ext]'
+            loader: 'file-loader?name=./static/[name].[ext]',
           },
-        ]
+        ],
       },
     ],
   },
@@ -73,7 +71,7 @@ module.exports = {
       minify: {
         removeComments: true,
         collapseWhitespace: false,
-      }
+      },
     }),
 
     // Кладем стили в отдельный файлик
@@ -87,6 +85,6 @@ module.exports = {
         from: './src/img',
         to: 'img',
       },
-    ])
+    ]),
   ],
 };
