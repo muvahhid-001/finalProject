@@ -38,11 +38,9 @@ function checkWidth() {
     }
 }
 
-
 checkWidth();
 
 window.addEventListener('resize', checkWidth);
-
 
 function updateVisibility() {
     const items = document.querySelectorAll('.list-equipment__item-two');
@@ -57,9 +55,6 @@ function updateVisibility() {
 updateVisibility();
 
 window.addEventListener('resize', updateVisibility);
-
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const callButton = document.querySelector(".header__link.call");
@@ -91,18 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
 toggleButton.addEventListener('click', () => {
     burgerMenu.classList.add('visible');
     overlay.style.visibility = 'visible';
@@ -118,28 +101,6 @@ const closeBurgerMenu = () => {
 closeButton.addEventListener('click', closeBurgerMenu);
 overlay.addEventListener('click', closeBurgerMenu);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const button = document.getElementById('toggleButton');
 const content = document.getElementById('content');
 
@@ -152,7 +113,6 @@ button.addEventListener('click', () => {
 });
 
 // Инициализация Swiper
-
 
 const btReadMore = document.querySelector('.read-more');
 const listItems = document.querySelectorAll('.hidden');
@@ -171,9 +131,6 @@ btReadMore2.onclick = () => {
         ? '<img class="arrow-img-two rotate" src="img/arrow.png" alt="Стрелка">Скрыть'
         : '<img class="arrow-img-two" src="img/arrow.png" alt="Стрелка">Показать все';
 };
-
-
-
 
 function initializeSwiper() {
 
@@ -200,9 +157,6 @@ function initializeSwiper() {
 
   // Добавляем обработчик события для изменения размера окна
   window.addEventListener('resize', initializeSwiper);
-
-
-
 
   document.addEventListener("DOMContentLoaded", function() {
     const callButton = document.querySelector(".comment");

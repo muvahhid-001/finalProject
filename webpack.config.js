@@ -11,7 +11,7 @@ module.exports = {
 
   // Выходной файл
   output: {
-    filename: './js/bundle.js'
+    filename: './js/bundle.js',
   },
 
   // Source maps для удобства отладки

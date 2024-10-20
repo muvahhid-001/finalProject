@@ -623,7 +623,7 @@ li.swiper-slide.three.swiper-slide-active {
     box-shadow: none !important;
     transform: none !important; }
   button:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
     border-color: #ff3e79;
     box-shadow: 0px 0px 4.5px #7e7e82;
     transition: 0.5s; }
@@ -868,7 +868,7 @@ li.swiper-slide.three.swiper-slide-active {
   padding-right: 15px;
   background-color: #f8f8f8 !important; }
 
-.module-call_button {
+.module-call__button {
   margin-left: auto;
   margin-top: 10px;
   color: white;
